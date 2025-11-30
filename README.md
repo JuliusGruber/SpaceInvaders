@@ -3,7 +3,7 @@
 A classic Space Invaders arcade game clone built with HTML5 Canvas and vanilla JavaScript. Play directly in your browser with no dependencies required.
 
 <p align="center">
-  <img src="screenshot.png" alt="Space Invaders gameplay" width="500">
+  <img src="screenshot.svg" alt="Space Invaders gameplay" width="500">
 </p>
 
 > **Built entirely with [Claude Code](https://github.com/anthropics/claude-code) using a single one-shot prompt.**
