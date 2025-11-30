@@ -28,6 +28,13 @@
             position: relative;
         }
 
+        .game-title {
+            font-size: 48px;
+            color: #0f0;
+            text-shadow: 0 0 10px #0f0;
+            margin-bottom: 10px;
+        }
+
         .header {
             display: flex;
             justify-content: space-between;
@@ -100,6 +107,7 @@
 </head>
 <body>
     <div class="game-container">
+        <h1 class="game-title">SPACE INVADERS</h1>
         <div class="header">
             <div>SCORE: <span id="score">0</span></div>
             <div>HIGH SCORE: <span id="highScore">0</span></div>
@@ -108,7 +116,6 @@
         <canvas id="gameCanvas" width="800" height="600"></canvas>
 
         <div class="start-screen" id="startScreen">
-            <h1>SPACE INVADERS</h1>
             <p class="blink">Press ENTER to Start</p>
             <div class="controls">
                 <p>← → : Move</p>
