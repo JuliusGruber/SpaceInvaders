@@ -61,7 +61,9 @@
         }
 
         .start-screen {
-            top: 60px;
+            top: 470px;
+            left: 50%;
+            transform: translateX(-50%);
         }
 
         .game-over-screen h1,
@@ -77,18 +79,14 @@
             margin-bottom: 10px;
         }
 
-        .start-screen .controls {
-            position: absolute;
-            top: 365px;
-            left: 50%;
-            transform: translateX(-50%);
-            font-size: 18px;
+        .controls-header {
+            font-size: 14px;
             color: #0a0;
+            margin-bottom: 5px;
         }
 
-        .start-screen .controls p {
-            font-size: 18px;
-            margin: 5px 0;
+        .controls-header span {
+            margin: 0 15px;
         }
 
         .hidden {
@@ -107,6 +105,11 @@
 </head>
 <body>
     <div class="game-container">
+        <div class="controls-header">
+            <span>← → : Move</span>
+            <span>SPACE : Shoot</span>
+            <span>P : Pause</span>
+        </div>
         <h1 class="game-title">SPACE INVADERS</h1>
         <div class="header">
             <div>SCORE: <span id="score">0</span></div>
@@ -117,11 +120,6 @@
 
         <div class="start-screen" id="startScreen">
             <p class="blink">Press ENTER to Start</p>
-            <div class="controls">
-                <p>← → : Move</p>
-                <p>SPACE : Shoot</p>
-                <p>P : Pause</p>
-            </div>
         </div>
 
         <div class="game-over-screen hidden" id="gameOverScreen">
